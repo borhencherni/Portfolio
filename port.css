@@ -1,0 +1,471 @@
+/* port.css */
+
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    padding-top: 60px; /* Add padding to the top of the body content to prevent it from hiding under the fixed header */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+ul{
+    display: flex;
+}
+
+header {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 0px 10px;
+    border-bottom: 2px solid white; /* Add this line to create a white separator */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 100%; /* Make sure the header takes the full width of the page */
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Align it to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* Default color for the rest of the letters */
+    margin-left: 100px; /* Remove any margin */
+    padding: 17px; /* Remove any padding */
+    box-sizing: border-box; /* Ensure padding and border are included */
+}
+
+a {
+    text-decoration: none;
+ }
+
+header .logo .highlight {
+    color: #ff004f; /* Red color for the first letter */
+}
+
+header nav ul {
+    font-size: 19px;
+    list-style: none;
+    padding: 0;
+    margin-right: 100px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 40px; /* Add margin to space out the list items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff004f;
+}
+
+header nav ul li a i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+
+
+
+
+.container {
+    width: 78%;
+    margin: auto;
+    /*overflow: hidden;*/
+    
+    box-sizing: border-box;
+}
+
+#home {
+    background: black;
+    color: #fff;
+    padding: 140px 20px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left; /* Align text to the left */
+    margin-top: 0px;
+}
+
+/* Style for the links as boxes */
+.work, .resume {
+    display: inline-block; /* Allows setting width and height */
+    padding: 15px 20px; /* Adjust padding as needed */
+    margin: 10px; /* Space around the boxes */
+    border: 2px solid #ff004f; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Background color for the box */
+    color: #ff004f; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center align text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    box-sizing: border-box;
+    width: 180px;
+}
+
+.work {
+    margin-left: 40px; /* Moves the box 20px to the right */
+}
+
+.resume {
+    margin-left: 200px; /* Moves the box 40px to the right */
+}
+
+
+/* Hover effect for the boxes */
+.work:hover, .resume:hover {
+    background-color: #ff004f; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+#home .text {
+    flex: 1;
+   /* min-width: 0px; /* Adjust as needed */
+    align-self: flex-start; /* Align text to the top */
+    margin-right: 20px; /* Add some space between the text and the image */
+}
+
+#home img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px; /* Adjust spacing as needed */
+    margin-top: 0; /* Add margin to move the image down */
+    flex-shrink: 0;
+}
+
+#home h1 {
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.intro-text {
+    font-size: 24px; /* Adjust the font size for the first paragraph */
+    font-weight: bold; /* Optionally make the text bold */
+    margin-top: 20px;
+}
+
+.description-text {
+    font-size: 18px; /* Adjust the font size for the second paragraph */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    margin-top: 10px; /* Add some space between the two paragraphs */
+}
+
+.red-text {
+    color: #ff004f;
+}
+
+
+
+
+
+/* General styling for the About section */
+#about {
+    background-color: #000000; /* Light gray background for contrast */
+    color: #ffffff; /* Dark text color for readability */
+    padding: 50px 20px; /* Add padding for spacing */
+    margin: 0 auto; /* Center the section */
+    max-width: 1200px; /* Limit the width for better readability */
+    text-align: left; /* Align text to the left */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Styling for the section title */
+#about h1 {
+    font-size: 36px; /* Large font size for the title */
+    font-weight: bold; /* Make the title bold */
+    color: #ff004f; /* Use the accent color for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Styling for the paragraph text */
+#about p {
+    font-size: 18px; /* Set a readable font size */
+    line-height: 1.8; /* Increase line height for better readability */
+    margin-bottom: 10px; /* Add space between sections */
+    color: #ffffff; /* Softer text color for paragraphs */
+}
+
+/* Custom styling for key sections in the paragraph */
+#about p strong {
+    display: block; /* Make each strong section start on a new line */
+    font-size: 20px; /* Increase font size for emphasis */
+    color: #000; /* Darker color for strong text */
+    margin-top: 10px; /* Space above each section */
+}
+
+/* Styling for emoji or icons in the text */
+#about p span {
+    font-size: 20px; /* Slightly larger for emphasis */
+    vertical-align: middle; /* Align with text */
+}
+
+/* Spacing for the overall section */
+#about {
+    margin-bottom: 0px; /* Space below the section */
+}
+
+
+
+
+
+
+#projects {
+    background-color: #000000; /* Light grey background */
+    padding: 60px 20px; /* Space around the section */
+    text-align: center; /* Center align headings */
+}
+
+#projects h1 {
+    font-size: 36px; /* Large font size for the main heading */
+    color: #ff004f; /* Dark grey text color */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+#projects h2 {
+    font-size: 24px; /* Font size for the subheading */
+    color: #ffffff; /* Medium grey text color */
+    margin-bottom: 40px; /* Space below the subheading */
+}
+
+.pro {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-around; /* Space between items */
+    background: #000000; /* White background for the project container */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #ffffff; /* White border for the project container */
+    margin-bottom: 40px; /* Space below the project container */
+    color: #ffffff; /* White text color for readability */
+}
+
+.pro img {
+    width: 250px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.managementapp {
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Allow the text container to take up remaining space */
+}
+
+.managementapp h2 {
+    font-size: 28px; /* Font size for project title */
+    color: #ff004f; /* Accent color for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.managementapp h3 {
+    font-size: 18px; /* Font size for tech used */
+    color: #666; /* Medium grey text color */
+    margin-bottom: 20px; /* Space below the tech used text */
+}
+
+.managementapp p {
+    font-size: 16px; /* Font size for the description */
+    line-height: 1.6; /* Line height for readability */
+    color: #fffbfb; /* Dark grey text color */
+    margin-bottom: 20px; /* Space below the description */
+}
+
+.managementapp a {
+    display: inline-flex; /* Inline-flex for link with icon */
+    align-items: center; /* Center align the icon and text */
+    color: #ff004f; /* Accent color for the link */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.managementapp a:hover {
+    color: #333; /* Darker color on hover */
+}
+
+.managementapp a img {
+    width: 20px; /* Set icon width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+
+
+
+
+
+
+/* Overall container styling */
+#contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 50px;
+    background-color: #000; /* Dark background for the contact section */
+    color: #fff; /* White text color */
+    margin-top: 130px;
+}
+
+/* Contact text styling */
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    color: #ff004f; /* Bright blue for emphasis */
+    margin-bottom: 0.5rem;
+}
+
+.contact-text h4 {
+    font-size: 1.25rem;
+    color: #e4e4e4; /* Light gray for secondary heading */
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+}
+
+.contact-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #b1b1b1; /* Light gray for paragraph text */
+    margin-bottom: 2rem;
+}
+
+/* Contact list styling */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-list i {
+    color: #ff004f;
+    font-size: 1.25rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Contact icons styling */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.contact-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff004f;
+    border-radius: 50%;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.contact-icons a:hover {
+    background: #ff004f;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+/* Contact form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    background: #000000; /* Dark background for input fields */
+    color: #fff; /* White text color */
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 2px solid #ffffff; 
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form .send {
+    width: 100%; /* Makes button width same as input fields */
+    padding: 14px 30px; /* Adjusted padding for button */
+    background: #ff004f;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #eceef0;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+    margin-left: 20px; /* Moves the button 20px to the right */
+    margin-right: auto; /* Adjusts the space on the right */
+}
+
+.contact-form .send:hover {
+    background: #ff004f;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+
+
+
+
+
+
+
+footer {
+    border-top: 2px solid white;
+    text-align: center;
+    padding: 5px;
+    background: #000000;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
